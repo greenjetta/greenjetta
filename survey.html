@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <h1 id="title">Survey Form
+    </h1>
+    
+    <style>
+      h1 {
+        text-align: center;
+        font-family: helvetica;
+      }
+      
+      p {
+        font-family: monospace;
+        font-size: 14px;
+      }
+      
+      body {
+        background-color: gray;
+        text-align: center;
+      }
+      
+      #survey-form {
+        display: inline-block;
+        text-align: center;
+      }
+     
+   
+      
+    </style>
+  </head>
+  <header>
+    <p id="description">This is a survey about your experience watching the Netflix show, Cobra Kai!</p>
+    <p>Let's get started!</p>
+    <br>
+  </header>
+  <body>
+    <div name="survey">
+    <form id="survey-form">
+      <label for="name" id="name-label">First Name:</label>
+      <br>
+      <input type="text" id="name" placeholder="First Name" required>
+      <br>
+      <label for="email" id="email-label">Email:</label>
+      <br>
+      <input type="email" id="email" placeholder="Email" required>
+      <br>
+      <label for="number" id="number-label">Age:</label>
+      <br>
+        <input type="number" id="number" min="0" max="100" placeholder="Age" required>
+      <br>
+      <label for="Character" id="character-label">Favorite Character:</label>
+      <br>
+      <select name="dropdown" id="dropdown">
+        <option value=""></option>
+        <option value="Miguel">Miguel Diaz</option>
+        <option value="Robby">Robby Keene</option>
+        <option value="Samantha">Samantha LaRusso</option>
+        <option value="Daniel">Daniel LaRusso</option>
+        <option value="Aisha">Aisha Robinson</option>
+        <option value="Johnny">Johnny Lawrence</option>
+        <option value="Hawk">Hawk</option>
+        <option value="Demetri">Demetri</option>
+      </select>
+      <br>
+      <div name="radio">
+      <p>What season you are you on?</p>
+      <input type="radio" value="1" name="radio"> Season 1</input>
+      <br>
+      <input type="radio" value="2" name="radio"> Season 2</input>
+    <br>
+    <input type="radio" value="3" name="radio"> Season 3</input>
+  <br>
+  <input type="radio" value="4" name="radio"> Season 4</input>
+  </div>
+
+<div name="checkbox">
+  <p>What is your favorite part of the show?</p>
+  <input type="checkbox" value="1"> Karate</input>
+<br>
+<input type="checkbox" value="2"> Relationships</input>
+<br>
+<input type="checkbox" value="3">Storylines</input>
+<p>Anything else you want to say? Feel free to leave it here.</p>
+<textarea></textarea>
+<br>
+  
+  <button type="submit" id="submit">Submit</button>
+  
+
+  
+</div>
+  
+
+    
+     
+    
+    
+    </form>
+    </div>
+  </body>
+</html>
