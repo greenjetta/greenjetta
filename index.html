@@ -1,89 +1,41 @@
-<html>
-  <head>
-    <div>
-    <title id="title">Tribute to Betty White</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <script src="index.js"></script>             
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="floating">
+            <div class="magicball">
+                <img src="magicballpx.png" alt="magic 8 ball">
+            </div>
+        </div>
+
+
+
+        <div class="response">
+            <p id="response"></p>
+        </div>
+
+
+
+        <div class="input">
+            <input id="input" placeholder="Ask me anything!">
+        </div>
+        
     </div>
     
-    <style>
-      h2 {
-        color: purple;
-        font-family: cursive;
-        text-align: center;
-      }
-      p {
-        font-family: monospace;
-        color: gray;
-        font-size: 14px;
-        text-align: center;
-        opacity: 1.5;
-      }
-      
-      li {
-        text-align: center;
-        color: black;
-        font-size: 14px;
-        font-family: monospace;
-        font-style: italic;
-      }
-      
-      li:hover {
-        color: red;
-      }
-      
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100px;
-        
-  
-  
-        
-}
-       
-      
-     
-      
-    </style>
-  </head>
-  
-  <header>
-    <h2>Tribute to Betty White</h2>
-  </header>
-  
-  <body>
-    <main id="main">
-      <div id="img-div">
-        <img-div id="img-caption">
-      <p style="text-align: center;"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fconsequence.net%2F2021%2F12%2Fbetty-white-tributes%2F&psig=AOvVaw3ab5mBLinrL5DEmbB0MNx9&ust=1641307199275000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjGmvrnlfUCFQAAAAAdAAAAABAD" alt="picture of betty white" id="image" class="center"></p>
-      </div>
-    </img-div>
-      <div id="tribute-info">
-        <p>Betty White was a beloved national treasure.</p>
-        <p>Not only was she beloved for her kind spirit,</p>
-        <p>but praised for her amazing accomplishments.</p>
-        <br>
-        <p> Betty was a: </p>
-          <br>
-          <ul>
-            <li>Eight time Emmy Winner,</li>
-            <li>Three time Screen Actors Guild Award Winner,</li>
-            <li>Three time American Comedy Award Winner,</li>
-            <li>Grammy Award Winner.</li>
-            <br>
-        <p>Betty's accomplishments also went beyond her mark in acting and television. Click here for<a href="https://www.washingtonblade.com/2021/12/31/longtime-lgbtq-ally-betty-white-has-died-at-99/" id="tribute-link" target="_blank"> more information.</a>
-      </div>
-      
-      
-      
-    </main>
-    
-    
-    
-  </body>
-  
-  
-  
-  
-  
+    <div class="generate-button">
+        <button id="generate-button" onclick="myFunction()"> Get Answer </button>
+    </div>
+   
+</body>
 </html>
